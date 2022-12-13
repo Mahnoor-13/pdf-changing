@@ -1,0 +1,21 @@
+.button-div {
+}
+.button-title{
+    background-color: #00aeef;
+    color: #fff;
+    width: 220px;
+    line-height: 2.2;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button-title:hover {
+    background-color: #0089bc;
+}
+.button-title:focus{
+    background-color: #0089bc;
+
+}

@@ -1,0 +1,33 @@
+.loans-div {
+}
+.loan-text {
+  color: #5a5a6c;
+  font-size: 21px;
+  font-family: sans-serif;
+}
+.loan-heading {
+  color: #101f30;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.loan-title {
+  font-weight: 700;
+  color: #a3a3a3;
+  font-size: 18px;
+}
+
+.loan-text-responsive {
+  color: #5a5a6c;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.loan-heading-responsive {
+  color: #101f30;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.loan-title-responsive {
+  font-weight: 700;
+  color: #a3a3a3;
+  font-size: 14px;
+}

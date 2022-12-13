@@ -1,0 +1,242 @@
+.nav {
+  display: block;
+}
+.responsive-nav {
+  display: none;
+}
+.navbar-container {
+  background: #101f30;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+.dropdown-nav {
+  width: 11px;
+  height: 7px;
+  margin-left: 13px;
+}
+.navbar-tabs {
+  padding: 0px 20px;
+  color: #fff;
+  font-size: 15px;
+  /* font-family: inherit !important; */
+  cursor: pointer;
+  font-weight: 700;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+.navbar-tabs-active {
+  padding: 0px 20px;
+
+  color: #08c177;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: sans-serif;
+  white-space: nowrap;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  height: 60px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  margin-top: 10px;
+}
+.navbar-right-tabs {
+  display: flex;
+  align-items: center;
+}
+.signup {
+  padding: 0px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.signup:hover {
+  color: #508bbc;
+}
+.logo {
+  width: 142px;
+}
+.loans {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0px 0px 9px #93908d;
+  width: 250px;
+}
+.dropdown-items {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.close-tabs {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1000;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background: rgb(0, 33, 65);
+}
+.nav__brand {
+  text-transform: uppercase;
+}
+
+.nav__menu {
+}
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
+
+.nav__active {
+  transform: translateX(0%);
+}
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
+@media (max-width: 1200px) {
+  .phone-num {
+    display: none;
+  }
+  .navbar-tabs,
+  .signup {
+    padding: 0px 9px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 950px) {
+  .nav {
+    display: none !important;
+  }
+  .responsive-nav {
+    display: block;
+  }
+  .responsive-top-navbar {
+    background: #101f30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 56px;
+    height: 93vh;
+    width: 50vw;
+    background: #101f30;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    z-index: 1000;
+  }
+  .navbar-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .nav-img {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  .phone-num-responsive {
+    display: flex;
+    align-items: center;
+  }
+  .signup-responsive {
+    border-color: #00aeef;
+    color: #00aeef;
+    background-color: transparent;
+    padding: 7px;
+    margin: 10px;
+  }
+  .close-nav {
+    position: absolute;
+    /* top: 0; */
+    height: 100vh;
+    width: 100%;
+  }
+  .icons-nav {
+    height: 40px;
+    width: 40px;
+  }
+  .responsive-nav-options {
+    margin-top: -30px;
+    margin-left: 65px px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 60px;
+  }
+  .options-name {
+    color: #fff;
+    padding: 15px 0px;
+  }
+  .phone-responsive {
+    display: flex;
+    align-items: center;
+  }
+}

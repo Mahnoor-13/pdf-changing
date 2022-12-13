@@ -1,0 +1,42 @@
+.home-container{
+    padding-top: 100px;
+    padding-top: 100px;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+.heading-option{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #101f30;
+}
+.win{
+    color: #08c177;
+}@media(max-width: 800px) {
+    .heading-option{
+        font-size: 30px;
+
+    }
+}
+
+
+@media(max-width: 500px) {
+    .heading-option{
+        font-size: 20px;
+
+    }
+}
+
+@media(max-width: 450px) {
+    .heading-option{
+        font-size: 20px;
+
+    }
+}
+
+@media(max-width: 400px) {
+    .heading-option{
+        font-size: 15px;
+
+    }
+}

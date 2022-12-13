@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+.lato-font {
+  font-family: "lato";
+}
+.white-font {
+  color: #fff;
+}
+.inherit-font {
+  font-family: inherit;
+}
+.App {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+
+}
+.PSPDFKit-Toolbar .PSPDFKit-7y27utzt66zv3mqf62v5b93bkj {
+  display: none !important;
+}
+.personal-loan{
+  display: flex;
+}
+.PDF-viewer{
+  width: 50vw;
+  position: absolute;right: 0;
+}
