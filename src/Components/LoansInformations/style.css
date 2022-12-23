@@ -31,3 +31,12 @@
   color: #a3a3a3;
   font-size: 14px;
 }
+
+@media(max-width: 800px) {
+  .loan-heading  {
+    font-size: 20px!important;
+  }
+  .loan-text{
+    font-size:12px;
+  }
+}
