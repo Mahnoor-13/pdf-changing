@@ -1,0 +1,85 @@
+.main_container{
+width: 50%;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+margin: 8px;
+overflow-y: auto;
+}
+
+.main-container-hr-tag{
+    border: none;
+    border-top: 1px solid;
+    width: 25%;
+}
+
+.hr-tag-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+.main-heading{
+text-align: center;
+margin-top: 15px;
+}
+
+.mortgage-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.checkbox-title {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.mortgage-checkbox{
+    font-size: 15px;
+    
+}
+
+.appliedFor-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+    margin-top: 13px;
+
+}
+
+.mortage-input{
+    margin-top: 20px;
+}
+
+.property-input{
+    margin-top: 20px;
+}
+
+.inline-checkbox{
+    display: flex;
+    margin-top: 10px;
+}
+.complete-this-line-inputs-div {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;
+     */
+     margin-top: 10px;
+     justify-content: space-evenly;
+     margin-bottom: 20px;
+
+}
+
+
+.complete-this-line-inputs-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;
+     */
+     margin-top: 70px;
+     justify-content: space-evenly;
+     margin-bottom: 20px;
+}

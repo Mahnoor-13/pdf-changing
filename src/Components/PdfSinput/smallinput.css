@@ -1,0 +1,56 @@
+.input-data2{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.small-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    background-color: transparent;
+    border-bottom: 2px solid silver;
+}
+
+label{
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-data2 input:focus ~ label,
+.input-data2 input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #000000;
+}
+
+.small-input:focus{
+    outline: none;
+}
+
+.input-underline2{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data2 .input-underline2:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    transform: scaleX(0);
+}
+
+.input-data2 .small-input:focus ~ .input-underline2:before,
+.input-data2 .small-input:valid ~ .input-underline2:before {
+transform: scaleX(1);
+}

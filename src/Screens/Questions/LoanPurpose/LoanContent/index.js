@@ -21,6 +21,8 @@ const Index = (props) => {
         name={props.name}
         setName={props.setName}
         setAlternateName={props.setAlternateName}
+        setDob={props.setDob}
+        setJointCredit={props.setJointCredit}
         setSsn={props.setSsn}
       />
     </div>

@@ -53,6 +53,50 @@ const PersonalLoan = (props) => {
         }}
         // value={props.name}
       />
+Ex
+      <input
+        onChange={(e) => {
+          setTimeout(() => {
+            props.setDob(e.target.value);
+          }, 1000);
+        }}
+        // value={props.name}
+      />
+
+Joint Credit
+      <input
+        onChange={(e) => {
+          setTimeout(() => {
+            props.setJointCredit(e.target.value);
+          }, 1000);
+        }}
+        // value={props.name}
+      />
+{/* 
+
+Date of Birth
+      <input
+        onChange={(e) => {
+          setTimeout(() => {
+            props.setDob(e.target.value);
+          }, 1000);
+        }}
+        // value={props.name}
+      />
+
+
+Date of Birth
+      <input
+        onChange={(e) => {
+          setTimeout(() => {
+            props.setDob(e.target.value);
+          }, 1000);
+        }}
+        // value={props.name}
+      />
+ */}
+
+
       <button className="button-continue" onClick={handleContinue}>
         Continue
       </button>

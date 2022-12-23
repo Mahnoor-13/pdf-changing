@@ -15,7 +15,7 @@ export default function PdfViewerComponent(props) {
   useEffect(() => {
     setInputValue(myContainer.current.value);
     window["autocomplete"](
-      "topmostSubform[0].Page1[0]._1a_Name[0]",
+      "Amount Existing Liens",
       myContainer.current.value
     );
   });
@@ -104,7 +104,7 @@ export default function PdfViewerComponent(props) {
   useEffect(() => {
     if (savedInstance) {
       savedInstance.setFormFieldValues({
-        "topmostSubform[0].Page1[0]._1a_Name[0]": props.name,
+        "Amount Existing Liens": props.name,
       });
 
       savedInstance.setFormFieldValues({
@@ -112,7 +112,7 @@ export default function PdfViewerComponent(props) {
       });
 
       savedInstance.setFormFieldValues({
-        "topmostSubform[0].Page1[0]._1a_Security_1[0]": props.ssn.slice(0, 3),
+        "topmostSubform[0].Page1[0]._1a_Security_1[0]": props.ssn.slice(0, 2),
       });
 
       savedInstance.setFormFieldValues({
@@ -120,15 +120,24 @@ export default function PdfViewerComponent(props) {
       });
 
       savedInstance.setFormFieldValues({
-        "topmostSubform[0].Page1[0]._1a_Security_3[0]": props.ssn.slice(5),
+        "topmostSubform[0].Page1[0]._1a_Security_3[0]": props.ssn.slice(8),
       });
+
+
+      savedInstance.setFormFieldValues({
+        "topmostSubform[0].Page1[0]._1a_PhoneW4[0]": props.dob,
+      });
+
+
+      savedInstance.setFormFieldValues({
+        "topmostSubform[0].Page1[0].credit[0].joint[0]._1a_Borrowers_Number[0]": props.jointcredit,
+      });
+
+
+     
     }
-    // setInputValue(myContainer.current.value);
-    // window["autocomplete"](
-    //   "topmostSubform[0].Page1[0]._1a_Name[0]",
-    //   props.name
-    // );
-  }, [props.name, props.alternateName, props.ssn]);
+  
+  }, [props.name, props.alternateName, props.ssn, props.dob, props.jointcredit]);
 
   return (
     <div>

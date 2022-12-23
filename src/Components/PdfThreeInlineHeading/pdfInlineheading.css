@@ -1,0 +1,12 @@
+.pdf-headingInline-div{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.pdf-heading-style{
+    font-size: 18px;
+}
